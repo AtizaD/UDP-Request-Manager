@@ -595,7 +595,9 @@ uninstall_udp_manager() {
   del 1
   print_center -ama "${a34:-Uninstallation completed!}"
   rm -rf /usr/bin/udp
+  rm -rf /root/udp
   enter
+  rm -rf /etc/UDPRequest
   exit
 }
 
