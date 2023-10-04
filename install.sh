@@ -15,7 +15,7 @@ sudo apt install -y wget
 sudo apt install -y curl
 sudo apt install -y neofetch
 
-source <(curl -sSL 'https://raw.githubusercontent.com/prjkt-nv404/UDP-Request-Manager/main/module/module')
+source <(curl -sSL 'https://raw.githubusercontent.com/AtizaD/UDP-Request-Manager/main/module/module')
 
 time_reboot() {
   print_center -ama "${a92:-System/Server Reboot In} $1 ${a93:-Seconds}"
@@ -97,22 +97,22 @@ else
   systemctl stop udp-request &>/dev/null
 
 # [+get files ⇣⇣⇣+]
-  source <(curl -sSL 'https://raw.githubusercontent.com/prjkt-nv404/UDP-Custom-Installer-Manager/main/module/module') &>/dev/null
-  wget -O /etc/UDPRequest/module 'https://raw.githubusercontent.com/prjkt-nv404/UDP-Custom-Installer-Manager/main/module/module' &>/dev/null
+  source <(curl -sSL 'https://raw.githubusercontent.com/AtizaD/UDP-Custom-Installer-Manager/main/module/module') &>/dev/null
+  wget -O /etc/UDPRequest/module 'https://raw.githubusercontent.com/AtizaD/UDP-Custom-Installer-Manager/main/module/module' &>/dev/null
   chmod +x /etc/UDPRequest/module
 
 # [+binary+]
-  wget "https://raw.githubusercontent.com/prjkt-nv404/UDP-Request-Manager/main/bin/udp-request-linux-amd64" -O /root/udp/udp-request &>/dev/null
+  wget "https://raw.githubusercontent.com/AtizaD/UDP-Request-Manager/main/bin/udp-request-linux-amd64" -O /root/udp/udp-request &>/dev/null
   mv /root/udp/udp-request /usr/bin
   chmod +x /usr/bin/udp-request
 
-  wget -O /etc/limiter.sh 'https://raw.githubusercontent.com/prjkt-nv404/UDP-Request-Manager/main/module/limiter.sh'
+  wget -O /etc/limiter.sh 'https://raw.githubusercontent.com/AtizaD/UDP-Request-Manager/main/module/limiter.sh'
   cp /etc/limiter.sh /etc/UDPRequest
   chmod +x /etc/limiter.sh
   chmod +x /etc/UDPRequest
   
   # [+udpgw+]
-  wget -O /etc/udpgw 'https://raw.githubusercontent.com/prjkt-nv404/UDP-Request-Manager/main/module/udpgw'
+  wget -O /etc/udpgw 'https://raw.githubusercontent.com/AtizaD/UDP-Request-Manager/main/module/udpgw'
   mv /etc/udpgw /bin
   chmod +x /bin/udpgw
 
