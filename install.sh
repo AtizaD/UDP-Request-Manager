@@ -15,7 +15,7 @@ sudo apt install -y wget
 sudo apt install -y curl
 sudo apt install -y neofetch
 
-source <(curl -sSL 'https://raw.githubusercontent.com/AtizaD/UDP-Request-Manager/main/module/module')
+source <(curl -sSL 'https://raw.githubusercontent.com/prjkt-nv404/UDP-Request-Manager/main/module/module')
 
 time_reboot() {
   print_center -ama "${a92:-System/Server Reboot In} $1 ${a93:-Seconds}"
